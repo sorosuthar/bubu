@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lobster&family=Matemasie&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main1 img {
+
+    width: 250px;
+}
+
+
+
+
+
+.row {}
+
+
+
+.imgc {
+    padding: 0px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imgc img {
+    width: 100%;
+}
+
+.gif1 {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fcc0c2;
+}
+
+.gif1 img {
+    width: 200px;
+}
+
+
+
+
+
+
+
+.mainl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.mainl p{
+    color:     #f7b2a9;;
+    font-size: 30px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+.uprd img{
+    width: 100%;
+}
+
+
+
+.vsdm {
+    padding: 40px 0px;
+}
+
+.vsdm video{
+    width: 100%;
+}

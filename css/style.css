@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.mainhead1 {
+  /* background: #fe9f9f; */
+  background-image: linear-gradient(120deg, #f744449b 0%, #fb2b966c 100%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px 15px 9px;
+}
+
+.dear {
+  /* background-image: linear-gradient(120deg, #0604029b 0%, #2e1d326c 100%); */
+  margin: 0 20px 0 0;
+  font-size: large;
+  color: #e8e8f3;
+  font-family: "Exo 2", sans-serif;
+}
+
+.bestie {
+  font-size: large;
+  color: #e8e8f3;
+
+  margin: 0 0px 0 20px;
+  font-family: "Exo 2", sans-serif;
+}
+
+.hearticon {
+  transition: all 1.4s;
+  color: #000000;
+  font-size: x-large;
+}
+
+.mainhead1:hover>.hearticon {
+  transform: rotate3d(-1344, -1544, -1343, 720deg);
+  cursor: pointer;
+  color: #f80542;
+  font-size: xx-large;
+  /* text-shadow: #f9004d; */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cardbody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  /* background-image: linear-gradient(120deg, #f9c0df9b 0%, #d911116c 100%); */
+
+}
+
+
+
+.birthdayCard {
+  margin: 30px 0px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform: perspective(2500px);
+  transition: 1s;
+}
+
+.birthdayCard:hover {
+  transform: perspective(2500px) rotate(5deg);
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
+    0 10px 100px rgba(0, 0, 0, 0.5);
+}
+
+.birthdayCard:hover .cardFront {
+  transform: rotateY(-160deg);
+}
+
+.birthdayCard:hover .happy {
+  visibility: hidden;
+}
+
+.cardFront {
+  position: relative;
+  background-color: #ff3145;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  transform-origin: left;
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
+    30px 0 50px rgba(0, 0, 0, 0.4);
+  transition: 0.6s;
+}
+
+.happy {
+  color: #e8e8f3;
+  font-family: Tahoma, sans-serif;
+  text-align: center;
+  margin: 30px 0px;
+  background-image: linear-gradient(120deg, #2622249b 0%, #8506066c 100%);
+  transition: 0.1s;
+}
+
+.balloons {
+  position: absolute;
+}
+
+.balloon-1,
+.balloon-2,
+.balloon-3,
+.balloon-4 {
+  position: absolute;
+  width: 85px;
+  height: 95px;
+  border-radius: 50%;
+}
+
+.balloon-1 {
+  background-color: rgb(231 220 220 / 70%);
+  left: -10px;
+  top: 50px;
+}
+
+.balloon-2 {
+  background-color: rgba(38, 255, 212, 0.511);
+  left: 40px;
+  top: 10px;
+}
+
+.balloon-3 {
+  background-color: rgba(167, 255, 74, 0.7);
+  left: 110px;
+  top: 30px;
+}
+
+.balloon-4 {
+  background-color: rgba(41, 216, 255, 0.7);
+  left: 170px;
+  top: 1px;
+}
+
+.balloon-1::before,
+.balloon-2::before,
+.balloon-3::before,
+.balloon-4::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 155px;
+  background-color: #ffc848;
+  top: 95px;
+  left: 43px;
+}
+
+.balloon-1::after,
+.balloon-2::after,
+.balloon-3::after,
+.balloon-4::after {
+  content: "";
+  position: absolute;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  top: 94px;
+  left: 37px;
+}
+
+.balloon-1::after {
+  border-bottom: 10px solid #ff3e6b;
+}
+
+.balloon-2::after {
+  border-bottom: 10px solid #04b183;
+}
+
+.balloon-3::after {
+  border-bottom: 10px solid #ffc94c;
+}
+
+.balloon-4::after {
+  border-bottom: 10px solid #33dbf1;
+}
+
+.cardInside {
+  position: absolute;
+  background-color: #fff;
+  width: 250px;
+  height: 250px;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2);
+}
+
+.cardInside img {
+  width: 250px;
+}
+
+p {
+  font-family: "Brush Script MT", cursive;
+  margin: 40px;
+  color: #333;
+}
+
+.name {
+  position: absolute;
+  left: 150px;
+  top: 200px;
+  color: #333;
+}
+
+.back {
+  font-family: Tahoma, sans-serif;
+  color: #333;
+  text-align: center;
+  margin: 30px;
+  outline-color: #333;
+  outline-style: dotted;
+}
